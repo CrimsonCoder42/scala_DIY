@@ -76,7 +76,17 @@ object CollectionsAndImports extends App {
   }
     .foreach(println)
 
+  println("-" * 50)
 
+  // Ranges
+
+  Range(start = 0, end = 10).foreach(println)
+  println("-" * 50)
+  Range(start = 0, end = 10, step = 2).foreach(println)
+  println("-" * 50)
+  0 until 10 by 2 foreach println
+  println("-" * 50)
+  0 to 9 by 2 foreach(println)
 
 
 }
