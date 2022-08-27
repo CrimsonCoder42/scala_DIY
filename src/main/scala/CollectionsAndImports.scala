@@ -63,6 +63,20 @@ object CollectionsAndImports extends App {
 
 //    matrix.foreach(println)
 
+// Map
+
+//  println(Map((1, "I"),(2, "II"), (3, "III")))
+//  println(Map((1 -> "I"),(2 -> "II"), (3 -> "III")))
+
+  Map((1 -> "I"),(2 -> "II"), (3 -> "III")).map { tuple2 =>
+    val key = tuple2._1
+    val value = tuple2._2
+
+    key -> value.toLowerCase
+  }
+    .foreach(println)
+
+
 
 
 }
